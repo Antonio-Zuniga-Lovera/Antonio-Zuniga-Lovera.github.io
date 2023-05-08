@@ -1,181 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing page</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Sistema de mensajeria</title>
     <script src="https://kit.fontawesome.com/31292dac97.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <a href="index.html">
-            <h1><span class="titulo-header">CPU</span>Store</h1>
-        </a>
-        <input class="buscador" type="text" placeholder="Busca los mejores productos y marcas :)" value="" />
-        <i class="fa-solid fa-magnifying-glass fa-2x icono-buscar"></i>
-        <nav>
-            <ul class="lista-navegacion">
-                <li><a href="#">Iniciar sesión</a></li>
-                <li><a href="#">Para empresa</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
     <main>
-        <!--Aquí irá la barra de opciones de apartado (Gaming y Streaming, Computación, Componentes, etc...)-->
-        <div class="barra-opciones">
-            <ul class="lista-opciones">
-                <li><a href="#">Gaming y Streaming <i class="fa-solid fa-chevron-down"></i></a></li>
-                <li><a href="#">Computación <i class="fa-solid fa-chevron-down"></i></a></li>
-                <li><a href="#">Componentes <i class="fa-solid fa-chevron-down"></i></a></li>
-                <li><a href="#">Conectividad y Redes <i class="fa-solid fa-chevron-down"></i></a></li>
-                <li><a href="#">Hogar y Oficina <i class="fa-solid fa-chevron-down"></i></a></li>
-                <li><a href="#">Audio y Video <i class="fa-solid fa-chevron-down"></i></a></li>
-                <li><a href="#">Otras Categorías <i class="fa-solid fa-chevron-down"></i></a></li>
-            </ul>
+        <div id="Contenedor">
+            <div id="Contenedor-chats">
+                <div class="chats">
+                    <img src="assets/img/foto-curriculum.jpg" alt="Perfil Antonio" class="foto-perfil">
+                    <div class="nombre-estado">
+                        <p class="nombre">Antonio</p>
+                        <span id="Estado">Activo ahora</span>
+                    </div>
+                    <div id="contenedor-iconos">
+                        <i class="fa-regular fa-message icono-mensaje"></i>
+                        <i class="fa-solid fa-bars icono-barras"></i>
+                    </div>
+                </div>
+                <div id="Boton">
+                    <button>Nuevo Chat</button>
+                </div>
+                <div class="chats">
+                    <img src="https://i.pinimg.com/736x/90/77/5d/90775d0518d04ee0cc89e15cef7af7d3.jpg" alt="Perfil Antonio" class="foto-perfil">
+                    <div class="nombre-estado">
+                        <p class="nombre">Nazuna Nanakusa</p>
+                        <span class="estado">
+                            私と恋に落ちたいですか？さあ...</span>
+                    </div>
+                </div>
+                <div class="chats">                   
+                    <img src="https://thicc.mywaifulist.moe/pending/waifus/KLiIdTh3hPq79IThUQynFn7EYy8nk6lyXwoEVYTa.jpg" alt="Perfil Antonio" class="foto-perfil">
+                    <div class="nombre-estado">
+                        <p class="nombre">Seri Kikyō</p>
+                        <span class="estado">これは残念です</span>
+                    </div>
+                </div>
+                <div class="chats">                   
+                    <img src="https://static.wikia.nocookie.net/dagashi-kashi/images/2/20/Hotaru_%28anime%29.jpg/revision/latest?cb=20160217114933" alt="Perfil Antonio" class="foto-perfil">
+                    <div class="nombre-estado">
+                        <p class="nombre">Hotaru Shidare</p>
+                        <span class="estado">この甘さを味わったことがあり...</span>
+                    </div>
+
+                </div>
+                <div class="chats">                   
+                    <img src="https://www.geekmi.news/__export/1654634919686/sites/debate/img/2022/06/07/aqua.jpg_423682103.jpg" alt="Perfil Antonio" class="foto-perfil">
+                    <div class="nombre-estado">
+                        <p class="nombre">Aqua</p>
+                        <span class="estado">神々の力見せてやる</span>
+                    </div>
+                </div>
+                <div class="chats">                   
+                    <img src="https://www.anmosugoi.com/wp-content/uploads/2023/04/Oshi-no-Ko-Ai-Hoshino-min-2.jpg" alt="Perfil Antonio" class="foto-perfil">
+                    <div class="nombre-estado">
+                        <p class="nombre">Ai Hoshino</p>
+                        <span class="estado">愛してます その言葉は嘘じゃ...</span>
+                    </div>
+                </div>
+                <div class="chats">                   
+                    <img src="https://i.pinimg.com/originals/dd/55/8b/dd558bb25fa60172f585d17c50f14305.jpg" alt="Perfil Antonio" class="foto-perfil">
+                    <div class="nombre-estado">
+                        <p class="nombre">Kaguya Shinomiya</p>
+                        <span class="estado">負けない</span>
+                    </div>
+                </div>
+                <div class="chats">                   
+                    <img src="https://www.egames.news/__export/1673803454027/sites/debate/img/2023/01/15/yuzuha_shiba_crop1673803421564.jpg_375107967.jpg" alt="Perfil Antonio" class="foto-perfil">
+                    <div class="nombre-estado">
+                        <p class="nombre">Yuzuha Shiba</p>
+                        <span class="estado">私があなたを守ります</span>
+                    </div>
+                </div>
+                <div class="chats">                   
+                    <img src="https://www.geekmi.news/__export/1679264730027/sites/debate/img/2023/03/19/power-hd.jpg_423682103.jpg" alt="Perfil Antonio" class="foto-perfil">
+                    <div class="nombre-estado">
+                        <p class="nombre">Power</p>
+                        <span class="estado">私は血が必要です</span>
+                    </div>
+                </div>
+                <div class="chats">
+                    <img src="https://64.media.tumblr.com/62abdfba81af687d5a962b1b9e936146/eaa3abfa42e33b57-56/s1280x1920/4c465ebde27a4af35f6caf54e5e5aa705e106125.jpg" alt="Perfil Antonio" class="foto-perfil">
+                    <div class="nombre-estado">
+                        <p class="nombre">Ushio Kofune</p>
+                        <span class="estado">サイクルを繰り返しましょう</span>
+                    </div>
+                </div>
+            </div>
+            <div id="Contenedor-mensajeria">
+                <div id="Logo-informacion">
+                    <img src="assets/img/hand.png" alt="Logo">
+                    <p>Comienza el Nertworking</p>
+                    <span>Presiona el botón <span id="span-chat">"Nuevo chat"</span> para comenzar a crear nuevas redes de contacto para tu empresa o emprendimiento</span>
+                </div>
+            </div>
         </div>
-        <!--Aquí irá la primera sección que corresponde al Slider-->
-        <section class="seccion-productos">
-            <input type="radio" name="imagen-slider" id="1" hidden>
-            <input type="radio" name="imagen-slider" id="2" hidden>
-            <input type="radio" name="imagen-slider" id="3" hidden>
-            <input type="radio" name="imagen-slider" id="4" hidden>
-            <input type="radio" name="imagen-slider" id="5" hidden>
-            <div class="contenedor-slider">
-                <div class="contenedor-imagenes-slider">
-                    <img src="assets/img/spdigital-bg-1.png" alt="producto slider 1">
-                </div>
-                <div class="contenedor-imagenes-slider">
-                    <img src="assets/img/spdigital-bg-2.png" alt="producto slider 2">
-                </div>
-                <div class="contenedor-imagenes-slider">
-                    <img src="assets/img/spdigital-bg-3.png" alt="producto slider 3">
-                </div>
-                <div class="contenedor-imagenes-slider">
-                    <img src="assets/img/spdigital-bg-4.png" alt="producto slider 4">
-                </div>
-                <div class="contenedor-imagenes-slider">
-                    <img src="assets/img/spdigital-bg-5.png" alt="producto slider 5">
-                </div>
-            </div>
-            <div class="contenedor-imagenes-chicas">
-                <label class="imagenes-item" for="1">
-                    <img src="assets/img/spdigital-bg-1.png">
-                </label>
-                <label class="imagenes-item" for="2">
-                    <img src="assets/img/spdigital-bg-2.png">
-                </label>
-                <label class="imagenes-item" for="3">
-                    <img src="assets/img/spdigital-bg-3.png">
-                </label>
-                <label class="imagenes-item" for="4">
-                    <img src="assets/img/spdigital-bg-4.png">
-                </label>
-                <label class="imagenes-item" for="5">
-                    <img src="assets/img/spdigital-bg-5.png">
-                </label>
-            </div>
-        </section>
-        <!--Aquí irá la sección de productos 2 (ofertas)-->
-        <section class="seccion-productos-2">
-            <div class="titulo-ofertas">
-                <h3>Ofertas<span>Imp</span>erdibles</h3>
-            </div>
-            <div class="productos-ofertas">
-                <div class="tarjeta-oferta">
-                    <img src="https://media.spdigital.cl/__sized__/products/rnczd8ws_dda77375-thumbnail-255x255-70.jpg" alt="Unidad de Estado Sólido Kingston NV2, 1TB NVMe, PCIe 4.0, Lectura 3500 MB/s Escritura 2100 MB/s">
-                    <p class="parrafo-oferta-1">Disponible en tienda</p>
-                    <h4 class="h4-nombre-producto">Kingston</h4>
-                    <div class="contenedor-parrafo-descripcion-producto">
-                        <p class="parrafo-descripcion-producto">Unidad de Estado Sólido Kingston NV2, 1TB NVMe, PCIe 4.0, Lectura 3500 MB/s Escritura 2100 MB/s...</p>
-                    </div>
-                    <span class="descuento-producto">55% dcto.</span>
-                    <span class="descuento-tachado">$109.990</span>
-                    <span class="precio-producto">$49.990</span>
-                    <span class="medio-de-pago">Transferencias</span>
-                </div>
-                <div class="tarjeta-oferta">
-                    <img src="https://media.spdigital.cl/__sized__/products/icn75_cq_c5c13d11-thumbnail-255x255-70.jpg" alt="Memoria RAM Corsair Vengeance RGB Pro, DDR4, 8GB, 3200Mhz, DIMM">
-                    <p class="parrafo-oferta-1">Disponible en tienda</p>
-                    <h4 class="h4-nombre-producto">Corsair</h4>
-                    <div class="contenedor-parrafo-descripcion-producto">
-                        <p class="parrafo-descripcion-producto">Memoria RAM Corsair Vengeance RGB Pro, DDR4, 8GB, 3200Mhz, DIMM...</p>
-                    </div>
-                    <span class="descuento-producto">53% dcto.</span>
-                    <span class="descuento-tachado">$59.990</span>
-                    <span class="precio-producto">$27.990</span>
-                    <span class="medio-de-pago">Transferencias</span>
-                </div>
-                <div class="tarjeta-oferta">
-                    <img src="https://media.spdigital.cl/__sized__/products/uiav4v4e_c7dd261c-thumbnail-255x255.png" alt="PC Gamer SP Labs Ward, Ryzen Pro 4650G, Radeon RX Vega 7, RAM 16GB (2x8), SSD 480GB, W10H">
-                    <p class="parrafo-oferta-1">Disponible en tienda</p>
-                    <h4 class="h4-nombre-producto">SP labs</h4>
-                    <div class="contenedor-parrafo-descripcion-producto">
-                        <p class="parrafo-descripcion-producto">PC Gamer SP Labs Ward, Ryzen Pro 4650G, Radeon RX Vega 7, RAM 16GB (2x8), SSD 480GB, W10H</p>
-                    </div>
-                    <span class="descuento-producto">38% dtoc.</span>
-                    <span class="descuento-tachado">$799.990</span>
-                    <span class="precio-producto">$499.990</span>
-                    <span class="medio-de-pago">Transferencias</span>
-                </div>
-                <div class="tarjeta-oferta">
-                    <img src="https://media.spdigital.cl/__sized__/products/r61ec8go_19b5dbdc-thumbnail-255x255.png" alt="Monitor Gamer Titan Army 24A2G, FHD (1920x1080), 165Hz, Panel IPS, 1ms, HDMI, DisplayPort">
-                    <p class="parrafo-oferta-2">Despacho gratis</p>
-                    <h4 class="h4-nombre-producto">Titan army</h4>
-                    <div class="contenedor-parrafo-descripcion-producto">
-                        <p class="parrafo-descripcion-producto">Monitor Gamer Titan Army 24A2G, FHD (1920x1080), 165Hz, Panel IPS, 1ms, HDMI, DisplayPort</p>
-                    </div>
-                    <span class="descuento-producto">43% dcto.</span>
-                    <span class="descuento-tachado">$349.990</span>
-                    <span class="precio-producto">$199.990</span>
-                    <span class="medio-de-pago">Transferencias</span>
-                </div>
-                <div class="tarjeta-oferta">
-                    <img src="https://media.spdigital.cl/__sized__/products/7wteqtfj_fd32ed70-thumbnail-255x255.png" alt="Silla Gamer Profesional E-Blue Cobra, Ergonómica, Pistón Clase 4, Negro/Rojo">
-                    <p class="parrafo-oferta-2">Despacho gratis</p>
-                    <h4 class="h4-nombre-producto">E-blue</h4>
-                    <div class="contenedor-parrafo-descripcion-producto">
-                        <p class="parrafo-descripcion-producto">Silla Gamer Profesional E-Blue Cobra, Ergonómica, Pistón Clase 4, Negro/Rojo</p>
-                    </div>
-                    <span class="descuento-producto">67% dcto.</span>
-                    <span class="descuento-tachado">$179.990</span>
-                    <span class="precio-producto">$59.990</span>
-                    <span class="medio-de-pago">Transferencias</span>
-                </div>
-            </div>
-        </section>
     </main>
-    <footer>
-        <div class="contenedor-footer">
-            <div class="contenedores-footer">
-                <h2>Ayuda</h2>
-                <ul class="listas-footer">
-                    <li><a href="#">Centro de ayuda</a></li>
-                    <li><a href="#">Seguimiento de mi compra</a></li>
-                    <li><a href="#">Formulario de contacto</a></li>
-                </ul>
-            </div>
-            <div class="contenedores-footer">
-                <h2>Nosotros</h2>
-                <ul class="listas-footer">
-                    <li><a href="#">Quiénes somos</a></li>
-                    <li><a href="#">Ventas corporativas</a></li>
-                    <li><a href="#">SP Labs</a></li>
-                    <li><a href="#">Términos y Condiciones</a></li>
-                    <li><a href="#">Políticas de privacidad</a></li>
-                </ul>
-            </div>
-            <div class="contenedores-footer">
-                <h2>Comunidad CPU</h2>
-                <ul class="listas-footer">
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">SP Labs</a></li>
-                    <li><a href="#">Twitch</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>
