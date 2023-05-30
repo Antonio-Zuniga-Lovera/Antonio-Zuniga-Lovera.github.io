@@ -1,133 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
 *{
     margin: 0;
     padding: 0;
 }
 
-body{
-    font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Righteous', cursive;
-    font-family: 'Varela Round', sans-serif;
+@media (max-width: 576px){
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .bg-navbar{
+        background-color: rgb(34, 95, 185);
+    }
+    
+    .icono-mobile{
+        margin-right: 0.3em;
+    }
+    
+    .navbar-nav a{
+        color: #fff;
+    }
+
+    .contenedor-buscador{
+        background-color: rgb(209, 205, 205);
+        text-align: center;
+        padding: 0.5em 0 0.5em 0;
+    }
+
+    .contenedor-buscador p{
+        font-weight: 600;
+    }
+
+    .buscador{
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        width: 60%;
+        text-align: left;
+        margin: 0 auto;
+        border-radius: 3px;
+        padding: 0.4em;
+    }
+
+    .buscador span{
+        color: rgb(53, 53, 53);
+    }
+
+    .buscador i{
+        margin-top: 0.3em;
+    }
+
+    .contenedor-producto{
+        margin: 2em auto;
+    }
+
+    .imagen-producto{
+        height: 200px;
+    }
+
+    .contenedor-boton{
+        display: flex;
+        justify-content: end;
+
+    }
+
+    .navegador-numeros{
+        display: flex;
+        justify-content: center;
+    }
+
+    .icono-mobile{
+        margin-right: 0.3em;
+    }
+    
+    .boton{
+        color: #fff;
+        background-color: #21618C;
+    }
+    
+    .boton:hover{
+        background-color: lightblue;
+    }
+
+    footer{
+        background-color: #07395a;
+        padding: 1em 2em;
+        text-align: center;
+    }
+
+    footer i{
+        color: #fff;
+        font-size: 1.5rem;
+        margin-left: 0.3em;
+    }
+
+    footer p{
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
 }
 
-#Contenedor{
-    display: flex;
-    width: 100vw;
-    height: 100vh;
+/*-----------------Aquí inicia vista escritorio----------------------- */
+
+.bg-navbar{
+    background-color: rgb(34, 95, 185);
 }
 
-#Contenedor-chats{
-    width: 20vw;
-    height: 100vh;
-}
-
-.chats{
-    display: flex;
-    padding: 0.9em 2em;
-    border-bottom: 1px solid #BEC1BB;
-}
-
-#Boton{
-    display: flex;
-    justify-content: center;
-    padding: 4em 3em;
-    border-bottom: 1px solid #BEC1BB;
-}
-
-#Boton button{
-    background-color: #A491D2;
-    border: none;
-    color: #fff;
-    padding: 1em 4em;
-    font-size: 1.3rem;
-}
-
-#Boton button:hover{
-    cursor: pointer;
-}
-
-.foto-perfil{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.nombre-estado{
-    display: flex;
-    flex-direction: column;
-    padding-top: 0.2em;
-}
-
-.nombre{
-    margin-left: 0.8em;
-    font-size: 1.25rem;
-}
-
-#Estado{
-    display: block;
-    font-size: 0.90rem;
-    margin-left: 1.1em;
-    color: #828485;
-}
-
-.estado{
-    display: block;
-    font-size: 1rem;
-    margin-left: 1em;
-    margin-top: 0.2em;
-}
-
-#contenedor-iconos{
-    display: flex;
-    margin-top: 0.8em;
-    margin-left: 6em;
-    color: #828485;
-}
-
-.icono-mensaje{
-    font-size: 1.5em;
-}
-
-.icono-barras{
-    margin-left: 1em;
-    font-size: 1.5em;
-}
-
-#Contenedor-mensajeria{
-    width: 80vw;
-    height: 100vh;
-    border-left: 1px solid #E8EBE4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#Logo-informacion{
-    width: 40%;
-    text-align: center;
-}
-
-#Logo-informacion img{
-    width: 300px;
-    height: 300px;
-    border-radius: 15px;
-}
-
-#Logo-informacion p{
-    color: #444749;
-    font-size: 3.2rem;
-    margin-top: 0.5em;
-    font-weight: bold;
-}
-
-#Logo-informacion span{
-    color: #828485;
-    font-size: 1.2rem;
-}
-
-#Logo-informacion #span-chat{
-    font-weight: bolder;
-    color: #000;
-}
