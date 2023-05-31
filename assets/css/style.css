@@ -14,8 +14,11 @@
         background-color: rgb(34, 95, 185);
     }
     
-    .icono-mobile{
-        margin-right: 0.3em;
+    .imagen-logo{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 0.5em;
     }
     
     .navbar-nav a{
@@ -53,6 +56,12 @@
 
     .contenedor-producto{
         margin: 2em auto;
+        filter: grayscale(100%);
+        transition: filter 1s;
+    }
+
+    .contenedor-producto:hover{
+        filter: grayscale(0%);
     }
 
 
@@ -60,10 +69,23 @@
         height: 200px;
     }
 
+    .card-body h3{
+        text-align: center;
+    }
+
     .contenedor-boton{
         display: flex;
-        justify-content: end;
+        justify-content: center;
 
+    }
+
+    .boton{
+        color: #fff;
+        background-color: #21618C;
+    }
+    
+    .boton:hover{
+        background-color: lightblue;
     }
 
     .navegador-numeros{
@@ -75,20 +97,14 @@
         margin-right: 0.3em;
     }
     
-    .boton{
-        color: #fff;
-        background-color: #21618C;
-    }
-    
-    .boton:hover{
-        background-color: lightblue;
-    }
 
     .contenedores-productos-secundarios{
         display: none;
     }
 
     footer{
+        display: flex;
+        flex-direction: column;
         background-color: #07395a;
         padding: 1em 2em;
         text-align: center;
@@ -137,12 +153,28 @@
         flex-direction: column;
     }
 
-    .contenedor-flex a{
-        margin: 0;
+    .texto-logo{
+        margin-left: 0.5em;
     }
 
-    .contenedor-flex i{
-        margin-right: 0.5em;
+    .contenedor-flex img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 0 0.2em 0 0.5em;
+        animation: translacionY 2s infinite;
+    }
+
+    @keyframes translacionY {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(190px);
+        }
+        100%{
+            transform: translateY(0);
+        }
     }
 
     .categorias{
@@ -170,6 +202,17 @@
 
     .contenedor-producto{
         margin: 1.5em;
+        filter: grayscale(100%);
+        transition: filter 1s;
+    }
+
+    .contenedor-producto:hover{
+        filter: grayscale(0%);
+    }
+
+
+    .descripcion{
+        display: none;
     }
     
     .navegador-numeros{
@@ -200,10 +243,23 @@
         border-radius: 3px;
         padding: 0.4em;
     }
+    
+    .buscador i{
+        margin-top: 0.3em;
+    }
 
     .boton{
         color: #fff;
         background-color: #21618C;
+        display: flex;
+        justify-content: center;
+        font-weight: 600;
+        transition: background-color 1s;
+    }
+
+    .boton:hover{
+        background-color: rgb(127, 205, 231);
+        font-weight: 600;
     }
     
 
